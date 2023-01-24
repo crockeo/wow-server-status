@@ -27,6 +27,9 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// TODO: redo how this token generation stuff works;
+	// i can just make a token by querying
+	// https://develop.battle.net/documentation/guides/using-oauth/client-credentials-flow
 	config := &oauth2.Config{
 		ClientID:     clientID,
 		ClientSecret: clientSecret,
